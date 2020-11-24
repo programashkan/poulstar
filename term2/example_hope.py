@@ -7,7 +7,5 @@ while True:
     if number % 7== 0:
         print("hope")
     if number %7  == 0:
-
-
-    print(number)
+print(number)
 
