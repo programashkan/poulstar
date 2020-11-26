@@ -1,0 +1,10 @@
+from turtle import Turtle , done
+t = Turtle()
+t.forward(50)
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(200)
+done()
