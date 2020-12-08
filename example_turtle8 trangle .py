@@ -17,11 +17,12 @@ while True:
 
 
     #TRIANGLE
-    x = 1
-    while x <+ 3:
-        t.forward(100)
-        t.left(120)
-        x +=1
-
+    def triangle(a):
+        x = 1
+        while x <+ 3:
+            t.forward(a)
+            t.left(120)
+            x +=1
+    triangle(randint(20 , 100))
 
     t.end_fill()
