@@ -18,14 +18,17 @@ t.forward(300)
 x = textinput("witch way:", "enter number")
 def way (u, d, b):
     if int(b) == u:
+        sc.bgpic("download.png")
         print(str(d))
+
         sc.bye()
+
 
 
 way(1, "game over", x)
 
 
-way(2, "wrong away", x)
+way(2, "wrong way", x)
 
 if int(x) == 3:
     print("nice")

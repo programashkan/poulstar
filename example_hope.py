@@ -3,6 +3,7 @@ from turtle import textinput , Screen
 sc = Screen()
 sc.setup(1, 1)
 x = textinput("Multiplication", "please enter number")
+sc.bye()
 
 
 
@@ -14,6 +15,9 @@ while True:
     number += 1
     if number % int(x) == 0:
         print("hope")
+
+
+
 
 
 
