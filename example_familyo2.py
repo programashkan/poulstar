@@ -1,4 +1,4 @@
-from turtle import Turtle, done , Screen , textinput
+from turtle import Terminator, Turtle, done , Screen , textinput
 #SCREEN
 sc = Screen()
 t = Turtle()
@@ -26,12 +26,15 @@ def name (a):
     t.forward(150)
     t.write(str(a), font=("Verdana",25, "normal"))
 
-
+score = 60
 # DEF LOSE OR WIN
 def iu (a):
     if x not in a[0]:
-        print("lose")
         sc.bye()
+
+
+
+        
 
 
 # GAME SCREEN
@@ -74,7 +77,7 @@ def go ():
     t.forward(150)
     t.pendown()
 
-    
+
 #DEF WRITE
 def write (a):
     t.write(a , font=("Verdana", 10, "normal"))
@@ -129,6 +132,12 @@ t.forward(-80)
 t.pendown()
 
 line()
+print(score)
+
+
+
+
+
 t.penup()
 t.left(90)
 t.forward(50)
@@ -144,5 +153,8 @@ import string, random
 x = random.choice(string.ascii_letters)
 print(x)
 line()
+
+
+
 
 done()
