@@ -1,4 +1,16 @@
 [
-
-    
+    {
+        "id": 1,
+        "name": "ashkan",
+        "password": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+        "card_number": "1234567890234567",
+        "cash": 660
+    },
+    {
+        "id": 2,
+        "name": "ashkann",
+        "password": "7c4a8d09ca3762af61e59520943dc26494f8941b",
+        "card_number": "1234567812345612",
+        "cash": 140
+    }
 ]

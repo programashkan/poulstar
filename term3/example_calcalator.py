@@ -1,5 +1,5 @@
 from tkinter import*
-
+from tkinter import messagebox
 me=Tk()
 me.geometry("354x520")
 me.title("CALCULATOR")
@@ -37,7 +37,16 @@ def equlbut():
      operator=''    
 
 def clrbut():
-     textin.set('')
+     textin.set("")
+
+
+def exit_btn():
+    if messagebox.askyesno("Exit program ?", "Are you sure you want to exit the Calculator?") == False :
+        return False
+    
+    exit()
+
+     
 
      
 metext=Entry(me,font=("Courier New",12,'bold'),textvar=textin,width=25,bd=5,bg='powder blue')
@@ -94,6 +103,7 @@ butclear.place(x=270,y=100)
 butequal=Button(me,padx=151,pady=14,bd=4,bg='white',command=equlbut,text="=",font=("Courier New",16,'bold'))
 butequal.place(x=10,y=380)
 
-butex=Button(me,padx=132,pady=14,bd=4,bg='white',command = me.destroy,text="Exit",font=("Courier New",16,'bold'))
+butex=Button(me,padx=132,pady=14,bd=4,bg='white',command = exit_btn,text="Exit",font=("Courier New",16,'bold'))
 butex.place(x=10,y=450)
+
 me.mainloop()
